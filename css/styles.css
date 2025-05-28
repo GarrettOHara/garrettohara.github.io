@@ -132,3 +132,22 @@ ul.education > li > ul {
   font-weight: inherit;
   cursor: inherit;
 }
+
+/* make each nested experience item flex-box */
+ul.experience > li > ul > li {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;  /* keeps date from shifting vertically */
+}
+
+/* optional: ensure the .role can wrap if needed */
+ul.experience > li > ul > li .role {
+  flex: 1 1 auto;
+}
+
+/* optional: give the date a bit of visual breathing room */
+ul.experience > li > ul > li .date {
+  flex: 0 0 auto;
+  margin-left: 1rem;
+  white-space: nowrap;
+}
