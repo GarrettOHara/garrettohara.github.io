@@ -1,0 +1,134 @@
+/* Reset & base */
+* { box-sizing: border-box; margin:0; padding:0; }
+
+/* Remove the 100% height/flex layout… */
+html, body {
+  /* no forced height */
+}
+
+body {
+  font-family: 'Berkeley Mono', monospace;
+  background: #f7f7f7;
+  color: #222;
+  line-height: 1.4;
+
+  /* add breathing room on all sides */
+  padding: 2rem 1rem;
+}
+
+/* Center horizontally & give bottom spacing */
+.container {
+  max-width: 700px;
+  width: 100%;
+  background: #fff;
+  padding: 2rem;
+  border: 2px solid #222;
+
+  /* center & gap below */
+  margin: 0 auto 2rem auto;
+}
+
+img.profile {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  display: block;
+  margin: 0 auto 1.5rem;
+  border: 2px solid #222;
+}
+
+h1.name {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+p.tagline {
+  text-align: center;
+  font-style: italic;
+  margin-bottom: 1.5rem;
+}
+
+.social {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.social a {
+  margin: 0 0.75rem;
+  text-decoration: none;
+  color: #222;
+}
+
+.section {
+  margin-bottom: 2rem;
+}
+.section h2 {
+  font-size: 1.25rem;
+  margin-bottom: 0.75rem;
+  border-bottom: 1px dashed #ccc;
+  padding-bottom: 0.25rem;
+}
+
+/* turn all these lists back on with bullets */
+ul.projects,
+ul.small-apps,
+ul.education,
+ul.experience {
+  list-style: disc;
+  margin-left: 1.5rem;
+}
+
+.projects li,
+.small-apps li,
+.education li,
+.experience > li {
+  margin-bottom: 0.75rem;
+}
+
+/* project & small-app links + bold titles */
+.projects a,
+.small-apps a {
+  text-decoration: underline;
+  color: #222;
+  font-weight: bold;
+}
+
+/* project & small-app descriptions */
+.projects .desc,
+.small-apps .desc {
+  display: block;
+  margin-left: 1rem;
+  margin-top: 0.25rem;
+  font-style: italic;
+}
+
+/* experience: nested list for roles */
+ul.experience > li > ul {
+  list-style: circle;
+  margin-left: 1.5rem;
+  margin-top: 0.25rem;
+}
+
+/* nested bullets for education details */
+ul.education > li > ul {
+  list-style: circle;
+  margin-left: 1.5rem;
+  margin-top: 0.25rem;
+}
+
+/* make experience & education links look like plain text */
+.experience a,
+.education a {
+  text-decoration: underline;
+  color: inherit;
+  font-weight: inherit;
+  cursor: inherit;
+}
+
+/* make footer link look like plain text */
+.footer a {
+  text-decoration: underline;
+  color: inherit;
+  font-weight: inherit;
+  cursor: inherit;
+}

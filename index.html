@@ -1,118 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-        integrity="sha512-Kv2Q/iK5fQF4xctO7JH2wzvzO6y3MI0sGzn93eG3CkypSQkl9b7nXEOV2rw+oFIgx2XkmG7R7ZnzYiHUPMQZ+g=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css"
-        integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
-    <title>Garrett O'Hara</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>garrettohara • Portfolio</title>
+  <!-- Berkeley Mono font -->
+  <link href="https://fonts.googleapis.com/css2?family=Berkeley+Mono&display=swap" rel="stylesheet">
+  <!-- CSS Reference -->
+  <link rel="stylesheet" href="css/styles.css">
 </head>
-
 <body>
-    <div class="grid-2">
-        <div class="section-1">
-            <i class="fas fa-code fa-5x white"></i>
-            <h2>Garrett O'Hara</h2>
-            <p>San Diego, United States.</p>
-            <a href="https://www.linkedin.com/in/garrettohara/">
-                <i class="fab fa-linkedin"></i>
-            </a>
-            <a href="https://github.com/garrettohara">
-                <i class="fab fa-github"></i>
-            </a>
-            <a href="https://medium.com/@garrettohara">
-                <i class="fa-brands fa-medium"></i>
-            </a>
-
-            <!-- <a href="https://leetcode.com/garrettohara/"><i class="fab fa-leetcode"></i></a> -->
-        </div>
-        <div class="section-2">
-
-
-            <h2>About</h2>
-            <p>
-                I'm a DevOps Engineer at NBC Sports Next and Co-Founder/SWE at Bucket Inc. I obtained by B.S. in
-                Computer Science, Minor of Mathematics at San Diego State University.
-                I'm currently pursing a M.S. in Computer Science at Georgia Tech University.
-            </p>
-            <p>
-                At NBC, I'm learning a ton from some of our more senior engineers. I maintain and develop new Terraform
-                modules to manage our AWS resources with Infrastructure as Code principles.
-                I have also developed a microservice to reload staging and development databases from their production
-                instances. This solution leverages Lambda Functions written in Python which
-                orchestrated by AWS Step Functions.
-            </p>
-            <p>
-                At Bucket, I am responsible for our product's scalability and security. Bucket leverages a gamut of
-                cloud services from both AWS and GCP to bring new features into our client's hands.
-            </p>
-            <!-- <p>
-                We recently reached a limit in query complexity when hosting data with Google Cloud Firestore, a NoSQL Document Database. I architected a solution to serve our clients with an auto-scaling load-balanced RESTful API hosted by AWS. The API performs CRUD requests to a PostgreSQL hosted by AWS RDS. I translated the data into a relational representation and backfilled the production data. We have been able to solve previous limitations by representing certain data in a Relational manner and querying using SQL. The main upside to this solution is the foundation that was laid to build more complex solutions.
-            </p> -->
-            <p>
-                In my free time, I'm an avid tech enthusiast, and an acoustic guitarist.
-            </p>
-
-
-            <h2>Education</h2>
-            <p>
-                M.S. Computer Science 2022 - Present
-            </p>
-            <p>
-                B.S. Computer Science, Mathematics 2018 - 2022
-            </p>
-            <p>
-                San Ramon Valley High School 2014 - 2018
-            </p>
-
-
-            <h2>Experience</h2>
-            <p>
-                Platform Operations Engineer (DevOps) 2022 - Present
-            </p>
-            <p>
-                Backend Software Engineer / Co-Founder 2020 - Present
-            </p>
-
-
-            <h2>Skills</h2>
-            <p>
-            <h4>Programming Languages</h4>
-            <p>
-                Java, Python, C, C++, HTML, CSS
-            </p>
-            <h4>Technologies</h4>
-            <p>
-                Linux/Unix, Git, GitHub, AWS, GCP, Terraform, PostgreSQL, MySQL
-            </p>
-            </p>
-
-
-            <h2>Projects</h2>
-            <a href="https://github.com/GarrettOHara/WebApplication">Anonymous polling web application</a>
-            <a href="https://github.com/GarrettOHara/NetworkThroughputMeasureTool">Network throughput measurement
-                tool</a>
-            <a href="https://github.com/GarrettOHara/ProcessManagement/tree/master/Resources">Process management with
-                C++</a>
-
-
-            <h2>Contact</h2>
-            <p>
-                mailto:garrettohara@icloud.com
-            </p>
-        </div>
+  <div class="container">
+    <img class="profile" src="assets/pp.jpg" alt="Profile picture">
+    <h1 class="name">garrettohara</h1>
+    <p class="tagline">i like to build things and play acoustic guitar</p>
+    <div class="social">
+      <a href="https://github.com/garrettohara">GitHub</a>
+      <a href="https://x.com/cd_garrett">Twitter</a>
+      <a href="https://linkedin.com/in/garrettohara">LinkedIn</a>
     </div>
+
+    <div class="section">
+      <h2>projects</h2>
+      <ul class="projects">
+        <li>
+          <a href="https://thebucketapp.com/">bucket</a>
+          <span class="desc">bucket lists made social</span>
+        </li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>small apps</h2>
+      <ul class="small-apps">
+        <li>
+            <a href="compound-interest/index.html">compound interest calc/graph</a>
+            <span class="desc"><em>basic calculator to compute and visulize long term compound growth on a given portfolio with monthly investments</em></span>
+        </li>
+        <li>
+            <a href="path-finding/index.html">path finding visulizer</a>
+            <span class="desc"><em>visualize A*, Dijkstra, BFS & DFS on a 2D graph</em></span>
+        </li>
+        <li>
+          <a href="https://github.com/GarrettOHara/bitcoin-trader">dca on coinbase</a>
+          <span class="desc"><em>dollar cost average BTC on coinbase without fees</em></span>
+        </li>
+        <li>
+          <a href="https://github.com/GarrettOHara/web-server">aws website</a>
+            <span class="desc"><em>deploy a flask api that serves static content via aws ec2, managed via terraform</em></span>
+        </li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>experience</h2>
+      <ul class="experience">
+        <li>
+          <a href="https://www.nbcsports.com/" target="_blank" rel="noopener">NBC Sports Next</a>
+          <ul>
+            <li>AI Engineer 2025 – Present</li>
+            <li>Platform Engineer 2022 – 2025</li>
+          </ul>
+        </li>
+        <li>
+          <a href="https://thebucketapp.com/" target="_blank" rel="noopener">Bucket</a>
+          <ul>
+            <li>Co-Founder &amp; Software Engineer 2020 – 2022</li>
+          </ul>
+        </li>
+        <li>
+          <a href="https://www.vee.com/" target="_blank" rel="noopener">Vee</a>
+          <ul>
+            <li>Software Engineer Intern 2019 – 2019</li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+
+    <div class="section">
+    <h2>education</h2>
+    <ul class="education">
+        <li>
+        <a href="https://www.gatech.edu/" target="_blank" rel="noopener">Georgia Institute of Technology</a>
+        <ul>
+            <li>Master of Science, Computer Science, MS</li>
+            <ul>
+                <em>specialization in computing systems</em>
+            </ul>
+        </ul>
+        </li>
+        <li>
+        <a href="https://www.sdsu.edu/" target="_blank" rel="noopener">San Diego State University</a>
+        <ul>
+            <li>Bachelor of Science, Computer Science, BS</li>
+            <ul>
+                <em>minor in mathematics</em>
+            </ul>
+        </ul>
+        </li>
+    </ul>
+    </div>
+
+
+    <div class="section">
+      <h2></h2>
+        <footer class="footer">
+            <p>Source code for this website is hosted on <a href="https://github.com/GarrettOHara/garrettohara.github.io" target="_blank" rel="noopener">here</a>.</p>
+        </footer>
+    </div>
+
 </body>
-
-<!-- Add whitespace after the chart -->
-<div style="height: 200px;"></div>
-
 </html>
